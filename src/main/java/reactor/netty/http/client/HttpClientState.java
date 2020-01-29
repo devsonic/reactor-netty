@@ -35,7 +35,7 @@ public enum HttpClientState implements ConnectionObserver.State {
 	},
 	/**
 	 * The request has been sent but the response has not been fully received and the
-	 * connection has prematurely closed
+	 * connection has been prematurely closed
 	 */
 	RESPONSE_INCOMPLETE() {
 		@Override
