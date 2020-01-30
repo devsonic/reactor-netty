@@ -575,13 +575,11 @@ public abstract class HttpClient {
 	}
 
 	/**
-	 * Setup a callback called after
-	 * {@link HttpClientState#RESPONSE_RECEIVED} has been emitted and the connection is
-	 * returned to the pool or closed.
+	 * Setup a callback called after {@link HttpClientResponse} has been fully received
+	 * and {@link HttpClientState#RESPONSE_COMPLETED} has been emitted.
 	 *
-	 * @param doAfterResponse a callback called after
-	 * {@link HttpClientState#RESPONSE_RECEIVED} has been emitted and the connection is
-	 * returned to the pool or closed.
+	 * @param doAfterResponse a callback called after {@link HttpClientResponse} has been fully received
+	 * and {@link HttpClientState#RESPONSE_COMPLETED} has been emitted.
 	 *
 	 * @return a new {@link HttpClient}
 	 */

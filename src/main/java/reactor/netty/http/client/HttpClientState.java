@@ -51,5 +51,14 @@ public enum HttpClientState implements ConnectionObserver.State {
 		public String toString() {
 			return "[response_received]";
 		}
+	},
+	/**
+	 * The response fully received
+	 */
+	RESPONSE_COMPLETED() {
+		@Override
+		public String toString() {
+			return "[response_completed]";
+		}
 	}
 }
